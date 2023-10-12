@@ -6,5 +6,5 @@ class RegisterForm(FlaskForm):
     email_address = StringField(label='email')
     password1 = PasswordField(label='password1')
     password2 = PasswordField(label='password2')
-    submit = SubmitField(lable='submit')
+    submit = SubmitField(label='submit')
 
