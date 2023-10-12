@@ -10,6 +10,7 @@
     integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <title>
     {% block title %}
+
     {% endblock %}
   </title>
 </head>
@@ -40,9 +41,10 @@
       </ul>
     </div>
   </nav>
+  {% block content %}
+
+  {% endblock %}
   <!-- Future Content here -->
-
-
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
