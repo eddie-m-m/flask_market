@@ -14,7 +14,7 @@ def market_page():
 
     return render_template('market.html', items=items)
 
-@app.routes('/register')
+@app.route('/register')
 def register_page():
     form = RegisterForm()
     return render_template('register.html', form=form)
