@@ -1,18 +1,21 @@
 from flask import flash, redirect, render_template, url_for
 from market import app, db
-from market.forms import RegisterForm
+from market.forms import RegisterForm, LoginForm
 from market.models import Item, User
+
 
 @app.route('/')
 @app.route('/home')
 def home_page():
     return render_template('home.html')
 
+
 @app.route('/market')
 def market_page():
     items = Item.query.all()
 
     return render_template('market.html', items=items)
+
 
 @app.route('/register', methods=['GET', 'POST'])
 def register_page():
